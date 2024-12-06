@@ -1,0 +1,39 @@
+body {
+
+    /*Esto es necesario para que la navbar no haga overlapping del contenido normal de la página, debido a que la clase de Bootstrap "fixed-top" la substrae del flujo normal del contenido de la página*/
+    padding-top: 136px;
+  
+}
+
+#contenido {
+
+    /*En caso de que falle el JS*/
+    padding-bottom: 185px;
+
+}
+
+#logo-barra-navegacion {
+
+    width: 100px;
+  
+}
+
+.bi-hand-thumbs-up {
+
+    color: gray;
+
+}
+
+/*El color del SVG cambia cuando se le da a me gusta*/
+.bi-hand-thumbs-up.gustado {
+
+    color: rgb(220, 53, 69);
+
+}
+
+.report-exito {
+
+    color: rgb(220, 53, 69);;
+    font-weight: bold;
+    
+}

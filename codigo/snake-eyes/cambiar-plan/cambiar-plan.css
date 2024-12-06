@@ -1,0 +1,29 @@
+body {
+
+    /*Esto es necesario para que la navbar no haga overlapping del contenido normal de la página, debido a que la clase de Bootstrap "fixed-top" la substrae del flujo normal del contenido de la página*/
+    padding-top: 136px;
+  
+}
+
+#contenido {
+
+    /*En caso de que falle el JS*/
+    padding-bottom: 185px;
+    font-family: Poppins;
+
+}
+
+#logo-barra-navegacion {
+
+    width: 100px;
+  
+}
+
+@font-face {
+    
+    /*https://fonts.google.com/specimen/Poppins/about
+        Creada por Indian Type Foundry, Jonny Pinhorn y Ninad Kale*/
+    font-family: Poppins;
+    src: url("../fuentes/Poppins-Medium.ttf") format("truetype");
+
+}

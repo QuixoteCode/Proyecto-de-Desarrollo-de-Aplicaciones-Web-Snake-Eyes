@@ -1,0 +1,36 @@
+body {
+
+    /*Esto es necesario para que la navbar no haga overlapping del contenido normal de la página, debido a que la clase de Bootstrap "fixed-top" la substrae del flujo normal del contenido de la página*/
+    padding-top: 136px;
+  
+}
+
+#contenido {
+
+    /*En caso de que falle el JS*/
+    padding-bottom: 185px;
+
+}
+
+#logo-barra-navegacion {
+
+    width: 100px;
+  
+}
+
+.formulario-eliminar-favoritos button {
+
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    
+}
+  
+  
+.formulario-eliminar-favoritos svg {
+
+    vertical-align: middle;
+
+}

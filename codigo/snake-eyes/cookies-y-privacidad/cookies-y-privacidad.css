@@ -1,0 +1,95 @@
+body {
+    /*Esto es necesario para que la navbar no haga overlapping del contenido normal de la página, debido a que la clase de Bootstrap "fixed-top" la substrae del flujo normal del contenido de la página*/
+    padding-top: 136px;
+}
+
+/*Garantiza que cuando el usuario es enviado aquí desde el índice la altura de la cabecera es tenida en cuenta a la hora de calcular su posición vertical en la página*/
+:target {
+    scroll-margin-top: 136px;
+}
+
+#contenido {
+    /*En caso de que falle el JS*/
+    padding-bottom: 185px;
+}
+
+#logo-barra-navegacion {
+    width: 100px;
+}
+
+#lista-colaboradores {
+    display: none;
+}
+
+.boton {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #e9e9e9;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/*Hace que el cuadradito del checkbox no se muestre*/
+.checkbox {
+    display: none;
+}
+
+/*Las siguientes entradas definen las dimensiones y la posición del slider*/
+.slider-label {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 68px;
+}
+
+.slider-label .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 68px;
+}
+
+.slider-label .slider:before {
+    position: absolute;
+    content: "";
+    height: 52px;
+    width: 52px;
+    left: 8px;
+    bottom: 8px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.checkbox:checked + .slider-label .slider {
+    background-color: #2196F3;
+}
+
+.checkbox:checked + .slider-label .slider:before {
+    transform: translateX(52px);
+}
+
+/*Eleva el texto de "Socios Colaboradores:" para que aparezca a la izquierda del botón slider en vez de aparecer debajo*/
+.mover-hacia-abajo {
+    transform: translateY(52px);
+}
+
+@font-face {
+    /*https://fonts.google.com/specimen/Poppins/about
+        Creada por Indian Type Foundry, Jonny Pinhorn y Ninad Kale*/
+    font-family: Poppins;
+    src: url("../fuentes/Poppins-Medium.ttf") format("truetype");
+
+}
+
+#aceptar, #mas-info, #socios, #politica-privacidad, #aviso-legal, #boton-volver-indice {
+
+    font-family: Poppins;
+
+}
